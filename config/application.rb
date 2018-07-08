@@ -33,7 +33,7 @@ module Usingjquery
     config.api_only = true
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'https://abhi-react-app.herokuapp.com/'
+        origins 'https://abhi-react-app.herokuapp.com'
         resource '*', headers: :any, methods: [:get, :post, :options]
       end
     end
